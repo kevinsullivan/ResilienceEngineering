@@ -49,18 +49,18 @@ The International Council on Systems Engineering (INCOSE) defines resilience as 
 \section{Related Work}
 We comprehensively summarize the literature about the definitions of resiliency and related concepts.
 
-Lundberg proposed a systemic resilience model \cite{Lundberg2015}. They think resiliece as a system property, is a contradictory/ trade-off definition of other properties like changeability and robust. So instead of trying to give a simplistic definition, they give a systemic resilience model. It contains six functions: anticipation, monitor- ing, response, recovery, learning, and self-monitoring, as well as four areas: Event-based constraints, Functional Dependencies, Adaptive Capacity and Strategy.
+Lundberg proposed a systemic resilience model \cite{Lundberg2015}. They think resilience as a system property, is a contradictory/ trade-off definition of other properties like changeability and robust. So instead of trying to give a simplistic definition, they give a systemic resilience model. It contains six functions: anticipation, monitoring, response, recovery, learning, and self-monitoring, as well as four areas: Event-based constraints, Functional Dependencies, Adaptive Capacity and Strategy.
 
-David Woods \cite{Woods2015} summaries the label \emph{resilience} as four basic concepts: 1) resilience as rebound from surprise events, no matter the events are anticipated or not; 2) resilience as a synonym for robustness, the ability to absorb perturbations; 3) resilience as graceful extensibility when a system needs to handle almost infinite operating states with finite resources; 4) resilience as sustained adaptability to manage an adaptive system that are layered networks, or a part of layered networks in a large scale. The value of first two concepts is conventional and have been studying for a long time. The latter two concepts are a rich set. He then argues that in practice, one needs to explicitly point out which one of the four meaning of resilience. 
+David Woods \cite{Woods2015} summaries the label \emph{resilience} as four basic concepts: 1) resilience as rebound from surprise events, no matter the events are anticipated or not; 2) resilience as a synonym for robustness, the ability to absorb perturbations; 3) resilience as graceful extensibility when a system needs to handle almost infinite operating states with finite resources; 4) resilience as sustained adaptability to manage an adaptive system that is one or a part of layered networks in a large scale. The value of first two concepts is conventional and have been studying for a long time. The latter two concepts are a rich set. He then argues that in practice, one needs to explicitly point out which one of the four meaning of resilience. 
 
 \subsection{DoD perspective}
-The general definition of a resilient system somewhat depends on the discipline and the framework employed for discussion. From Goerger et. al. \cite{Goerger2014} define the general resiliency in plain English as:\\
+The general definition of a resilient system somewhat depends on the disciplines and frameworks employed for discussion. From Goerger et. al. \cite{Goerger2014} define the general resiliency in plain English as:\\
 
 \emph{
 A resilient system is trusted and effective out of the box, can be used in a wide range of contexts, is easily adapted to many others through reconfiguration and/or replacement, and has a graceful and detectable degradation of function.
 }\\
 
-The perspective of DoD slightly varies though. Their perspective has following key properties: 1) the ability to Repel/Resist/Absorb Disruptions; 2) the ability to recover from disruptions; 3) the ability to adapt to new or changed conditions; 4) and broad utility. Since most systems that DoD cares about is the military equipments, they have some unique characteristics, such as:
+The perspective of DoD slightly varies though, which as following key properties: 1) the ability to Repel/Resist/Absorb Disruptions; 2) the ability to recover from disruptions; 3) the ability to adapt to new or changed conditions; 4) and broad utility. Since most of the systems that DoD cares about are military equipments, they have some unique characteristics, such as:
 \begin{itemize}
 \item Unknown and Uncertain Environments
 \item Mobile and Limited Support Structure
@@ -69,11 +69,19 @@ The perspective of DoD slightly varies though. Their perspective has following k
 \item Changing Natural/Manmade Environments
 \end{itemize}
 
+\subsection{Related Concepts}
+There are some other related concepts in the context of resilience, like survivability, dependability. We thus summaries work in these fields and their relationships with resilience.
+
+\subsubsection{Survivability}
+According to Richards et al., survivability includes passive and active techniques, which may reveal themselves in the physical, operational, and organizational system design. The passive survivability depends on the design principles like redundancy and diversity to make a system survivable in a disturbance environment. 
+
+\subsubsection{Dependability}
+Dependability summaries.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Do we really need Resilience?}
-Some famous researchers may argue that we don't need resilience at all. They argue that resilience is just another word for survivability that we understand very well. Nevertheless, some other researchers argue that Resilience is a totaly new way to think about safety. Woods \cite{Woods2006} explained that in industry, efforts to improve the safety of a system are often dominated by hindsight, say usually drive by events that have happened. It is a nature motivation to make sense and reasoning things already happened. However, in acdemic institutions, our researches ought to be driven by intellectual, to think about things that might happen in the future. Resilience is such a new way to think about safety. It is not adding a new term to the existing vocabulary, but introducing a completely new vocabulary.
+Some famous researchers may argue that we don't need resilience at all. They argued that resilience is just another word for survivability that we understand very well. Nevertheless, some other researchers argue that Resilience is a totally new way to think about safety. Woods \cite{Woods2006} explained that in industry, efforts to improve the safety of a system are often dominated by hindsight, say usually drive by events that have happened. It is a nature motivation to make sense and reasoning things already happened. However, in academic institutions, our researches ought to be driven by intellectual, to think about things that might happen in the future. Resilience is such a new way to think about safety. It is not adding a new term to the existing vocabulary, but introducing a completely new vocabulary.
 
 Not like other safety related concepts, resilience allows people to produce success when failure threatens, but not incrementally add some efforts to fix the holes found from the happened failures.
 
